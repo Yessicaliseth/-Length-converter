@@ -70,9 +70,9 @@ function OptionComponent(props) {
     return(
         <select name={props.name} id="" className="oneQuestion">
             {
-                LONGITUDES.map(long=> {
+                LONGITUDES.map((long, index) => {
                     return (
-                        <option value={long.value}>{long.uiName}</option>
+                        <option key={index} value={long.value}>{long.uiName}</option>
                     )
                 })
             }
