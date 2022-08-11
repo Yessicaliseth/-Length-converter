@@ -16,6 +16,7 @@
 
 .container{
     width: 800px;
+    height: auto;
     justify-items: center;
     border-radius: 20px;
     background-color: burlywood;
@@ -93,6 +94,38 @@ select:focus{
 
 .container__response--h3{
     border-radius: 5px;
-    font-weight: lighter;
 }
 
+@media (max-width: 850px) {
+    .container {
+      width: 600px;
+      height: auto;
+    }
+    .container__title{
+        font-size: 1.25rem;
+    }
+    .container__questions{
+        padding: 25px;
+    }
+    .container__questions--h2{
+        font-weight: lighter;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 400px;
+        height: auto;
+    }
+    .container__title{
+        font-size: 1rem;
+    }
+    .container__questions{
+        padding: 15px;
+        font-weight: lighter;
+    }
+    .container__questions--h2{
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+}
